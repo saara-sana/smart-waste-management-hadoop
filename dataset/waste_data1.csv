@@ -1,0 +1,11 @@
+Bin_ID,Zone,Timestamp,Waste_Type,Fill_Level_Percent,Collection_Status
+B101,ZoneA,2026-04-01 08:30:00,Organic,85,Not Collected
+B102,ZoneB,2026-04-01 09:00:00,Plastic,95,Not Collected
+B103,ZoneA,2026-04-01 10:15:00,Metal,60,Collected
+B104,ZoneC,2026-04-01 11:45:00,Organic,98,Not Collected
+B105,ZoneB,2026-04-01 12:30:00,Plastic,70,Collected
+B106,ZoneA,2026-04-02 08:20:00,Organic,92,Not Collected
+B107,ZoneC,2026-04-02 09:40:00,Metal,88,Not Collected
+B108,ZoneB,2026-04-02 10:10:00,Plastic,99,Not Collected
+B109,ZoneA,2026-04-02 11:00:00,Organic,50,Collected
+B110,ZoneC,2026-04-02 12:00:00,Metal,97,Not Collected
