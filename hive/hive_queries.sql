@@ -16,3 +16,11 @@ SELECT TO_DATE(Timestamp) AS report_date,
 FROM waste_data
 GROUP BY TO_DATE(Timestamp)
 ORDER BY report_date;
+
+SELECT Zone,
+       Waste_Type,
+       COUNT(*) AS overflow_count
+FROM waste_data
+WHERE Fill_Level_Percent > 90
+GROUP BY Zone, Waste_Type
+ORDER BY overflow_count DESC;
