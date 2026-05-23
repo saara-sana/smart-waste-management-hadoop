@@ -10,3 +10,9 @@ SELECT SUBSTR(Timestamp,1,10) AS waste_date,
 FROM waste_data
 GROUP BY SUBSTR(Timestamp,1,10)
 ORDER BY waste_date;
+
+SELECT TO_DATE(Timestamp) AS report_date,
+       COUNT(*) AS total_records
+FROM waste_data
+GROUP BY TO_DATE(Timestamp)
+ORDER BY report_date;
