@@ -4,3 +4,9 @@ SELECT Waste_Type,
 FROM waste_data
 GROUP BY Waste_Type
 ORDER BY avg_fill_percentage DESC;
+
+SELECT SUBSTR(Timestamp,1,10) AS waste_date,
+       COUNT(*) AS total_entries
+FROM waste_data
+GROUP BY SUBSTR(Timestamp,1,10)
+ORDER BY waste_date;
